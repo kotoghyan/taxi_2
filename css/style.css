@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic");
 html {
   scroll-behavior: smooth;
+  scroll-padding: 100px;
 }
 body {
   position: relative;
@@ -15,7 +16,8 @@ body {
   font-size: 14px;
   color: #c0bbbb;
   text-transform: uppercase;
-  letter-spacing: 1.8px; }
+  letter-spacing: 1.8px;
+}
 
 .h1 {
   font-size: 50px;
@@ -23,25 +25,37 @@ body {
 
 .linkContainer{
   display: flex;
-  justify-content: space-around;
+  /*justify-content: space-around;*/
   margin-top: 10px;
   width:100%;
   gap:5px;
   font-size: 10px;
   font-weight: bold;
   color: black;
+margin-left: 15px;
 }
 .link:link, .link:visited {
   color: black;
   text-decoration: none;
   padding: 8px;
-  background-color: #ffde40;
   border-radius: 4px;
-  border-color: red;
-  border-color: rgba(24, 24, 24, 0.1);
+  border-style: solid;
+  border-width: 2px;
+  border-color: #ffde40;
 }
-
-
+#imgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row{
+  align-items: center;
+  justify-content: center;
+}
+#courier {
+  min-width: 200px;
+  max-width: 300px;
+}
 .input {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -99,11 +113,9 @@ header {
           box-shadow: 2px 5px 24px 0px rgba(0, 0, 0, 0.1);
   padding: 10px 0;
   /*position: relative;*/
-  z-index: 10;
+  z-index: 9999;
 }
-/*header.container.row.logo {*/
 
-/*}*/
   header .logo {
     display: -moz-flex;
     display: -ms-flex;
@@ -411,6 +423,34 @@ header {
       color: #4a4a4a;
       font-size: 20px;
       margin-left: 85px; }
+#four {
+  background-color: #fff;
+  padding: 140px 0 80px; }
+  #four .card1 {
+    border: none;
+    display: block;
+    margin-bottom: 70px; }
+    #four .card1 .rotate:after {
+      -webkit-transform: rotate(-180deg);
+              transform: rotate(-180deg); }
+    #four .card1 a {
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 24px;
+      margin-top: 70px;
+      height: 60px;
+      position: relative; }
+      #four .card1 a b {
+        font-size: 20px;
+        margin-right: 20px;
+        padding: 20px;
+        border-radius: 50%;
+        background-color: #f6f6f6; }
+    #four .card1 > div {
+      margin-top: 15px;
+      color: #4a4a4a;
+      font-size: 20px;
+      margin-left: 85px; }
 
 #five {
   background-color: #f6f6f6;
@@ -638,6 +678,12 @@ footer {
       cursor: pointer; }
 
 @media only screen and (min-width: 220px) and (max-width: 575px) {
+  #imgContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .silver {
     font-weight: bold;
     font-size: 14px;
@@ -656,7 +702,7 @@ footer {
     padding: 10px 0;
     position: -webkit-sticky;
     position: sticky;
-    z-index: 10;
+    z-index: 9999;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
@@ -1000,6 +1046,38 @@ footer {
         font-size: 16px;
         margin-left: 0px; }
 
+  #four {
+    padding: 60px 0 80px; }
+    #four .card1 {
+      background-color: transparent;
+      border: none;
+      display: block;
+      margin-bottom: 25px; }
+      #four .card1 .rotate:after {
+        -webkit-transform: rotate(-180deg);
+                transform: rotate(-180deg); }
+      #four .card1 a {
+        display: inline-block;
+        width: 250px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 10px;
+        height: 30px;
+        position: relative; }
+        #four .card1 a b {
+          display: none;
+          font-size: 20px;
+          margin-right: 20px;
+          padding: 20px;
+          border-radius: 50%;
+          background-color: #f6f6f6; }
+      #four .card1 > div {
+        margin-top: 15px;
+        color: #4a4a4a;
+        font-size: 16px;
+        margin-left: 0px; }
+
   #five {
     background-color: #f6f6f6;
     padding: 50px 0; }
@@ -1241,6 +1319,12 @@ footer {
           -ms-flex-direction: column;
               flex-direction: column; } }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+  #imgContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .silver {
     font-weight: bold;
     font-size: 14px;
@@ -1260,7 +1344,7 @@ footer {
     position: -webkit-sticky;
     position: sticky;
     /*position: relative;*/
-    z-index: 10;
+    z-index: 9999;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
@@ -1604,6 +1688,38 @@ footer {
         font-size: 16px;
         margin-left: 0px; }
 
+  #four {
+    padding: 60px 0 80px; }
+    #four .card {
+      background-color: transparent;
+      border: none;
+      display: block;
+      margin-bottom: 25px; }
+      #four .card .rotate:after {
+        -webkit-transform: rotate(-180deg);
+                transform: rotate(-180deg); }
+      #four .card a {
+        display: inline-block;
+        width: 100%;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 10px;
+        height: 30px;
+        position: relative; }
+        #four .card a b {
+          display: none;
+          font-size: 20px;
+          margin-right: 20px;
+          padding: 20px;
+          border-radius: 50%;
+          background-color: #f6f6f6; }
+      #four .card > div {
+        margin-top: 15px;
+        color: #4a4a4a;
+        font-size: 16px;
+        margin-left: 0px; }
+
   #five {
     background-color: #f6f6f6;
     padding: 50px 0; }
@@ -1768,6 +1884,12 @@ footer {
         text-decoration: none;
         cursor: pointer; } }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  #imgContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .silver {
     font-weight: bold;
     font-size: 14px;
@@ -1787,7 +1909,7 @@ footer {
             box-shadow: 2px 5px 24px 0px rgba(0, 0, 0, 0.1);
     padding: 10px 0;
     /*position: relative;*/
-    z-index: 10;
+    z-index: 9999;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
@@ -2126,6 +2248,37 @@ footer {
           border-radius: 50%;
           background-color: #f6f6f6; }
       #four .card > div {
+        margin-top: 15px;
+        color: #4a4a4a;
+        font-size: 16px;
+        margin-left: 0px; }
+  #four {
+    padding: 60px 0 80px; }
+    #four .card1 {
+      background-color: transparent;
+      border: none;
+      display: block;
+      margin-bottom: 25px; }
+      #four .card1 .rotate:after {
+        -webkit-transform: rotate(-180deg);
+                transform: rotate(-180deg); }
+      #four .card1 a {
+        display: inline-block;
+        width: 100%;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 10px;
+        height: 30px;
+        position: relative; }
+        #four .card1 a b {
+          display: none;
+          font-size: 20px;
+          margin-right: 20px;
+          padding: 20px;
+          border-radius: 50%;
+          background-color: #f6f6f6; }
+      #four .card1 > div {
         margin-top: 15px;
         color: #4a4a4a;
         font-size: 16px;
