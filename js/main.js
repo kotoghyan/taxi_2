@@ -9,14 +9,9 @@ $('.open-modal').click(function() {
     $('#modal').modal('toggle')
 })
 
-// document.querySelector('#silver-1').scrollIntoView({
-//     behavior: 'smooth'
-//
-// });
 
 
 
-// faq
 $('.faq').on('click', function(){
 $(this).find('.plus').toggleClass('active');
 $(this).find('.a').slideToggle(300);
